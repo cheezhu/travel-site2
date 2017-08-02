@@ -1,0 +1,47 @@
+.headline {
+	font-weight: 300;
+	font-size: 1.9rem;
+	color: $Blue;
+	/*
+	&--border {
+		border: 1px solid blue;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	*/
+	@mixin atSmall {
+		font-size: 2.875rem;
+	}
+	&--centered {
+		text-align: center;
+	}
+	&--orange {
+		color: $mainOrange;
+	}
+	&--light {
+		font-weight: 100;
+	}
+	&--small {
+		font-size: 1.2rem;
+		@mixin atSmall {
+			font-size: 1.85rem;
+		}
+	}
+	&--narrow {
+		max-width: 450px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	&--b-margin-small {
+		margin-bottom: 0.5em;
+	}
+	&--b-margin-large {
+		margin-bottom:1.6em; 
+	}
+	@mixin atMedium {
+		&--no-t-margin-until-medium {
+		margin-top: 0;
+	}
+	}
+	
+}
